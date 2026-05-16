@@ -83,6 +83,7 @@ input, select, textarea {
 	}
 
 	body {
+		/* color of the entire page background */
 		background: #f2f5f3;
 	}
 
@@ -2118,7 +2119,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			border-color: #a1cd9b;
+			border-color: #ff6600ff;
 		}
 
 	form input[type="text"],
@@ -2412,7 +2413,7 @@ input, select, textarea {
 			}
 
 			#nav li.current a {
-				background: #ec4bc9;
+				background: #008080ff;
 				color: #fff;
 			}
 
@@ -2823,7 +2824,7 @@ input, select, textarea {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #ec4bc9;
+						background: #008080ff;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -2834,7 +2835,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #ec4bc9;
+						background-color: #008080ff;
 					}
 
 			#navPanel {
