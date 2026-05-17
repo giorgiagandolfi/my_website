@@ -1,317 +1,402 @@
 <!DOCTYPE HTML>
 <!--
 	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	html5up.net
 -->
 <html>
 	<head>
-		<title>The Synthetic Cohort of Universal Tumours</title>
+		<title>The Synthetic Cohort of Universal Tumours (SCOUT)</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+
+			/* =========================
+			   SCOUT Timeline
+			========================= */
+
+			.timeline {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				position: relative;
+				margin-top: 4em;
+				margin-bottom: 2em;
+				gap: 1em;
+				flex-wrap: wrap;
+			}
+
+			.timeline::before {
+				content: '';
+				position: absolute;
+				top: 40px;
+				left: 5%;
+				width: 90%;
+				height: 4px;
+				background: rgba(87, 93, 89, 0.35);
+				z-index: 0;
+				border-radius: 10px;
+			}
+
+			.timeline-step {
+				position: relative;
+				z-index: 1;
+				width: 18%;
+				text-align: center;
+			}
+
+			.timeline-step a {
+				text-decoration: none;
+				color: inherit;
+				display: block;
+			}
+
+			.circle {
+				width: 90px;
+				height: 90px;
+				margin: 0 auto 1em auto;
+				border-radius: 50%;
+				background: rgba(87, 93, 89, 0.35);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 2.2em;
+				transition: all 0.3s ease;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+			}
+
+			.timeline-step:hover .circle {
+				transform: translateY(-10px) scale(1.08);
+				background: rgba(87, 93, 89, 0.7);
+			}
+
+			.timeline-step h3 {
+				font-size: 1em;
+				margin-bottom: 0.5em;
+			}
+
+			.timeline-step p {
+				font-size: 0.9em;
+				line-height: 1.5em;
+			}
+
+			/* Responsive */
+
+			@media screen and (max-width: 980px) {
+
+				.timeline {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.timeline::before {
+					display: none;
+				}
+
+				.timeline-step {
+					width: 100%;
+					max-width: 400px;
+					margin-bottom: 2em;
+				}
+			}
+
+		</style>
+
 	</head>
+
 	<body class="homepage is-preload">
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1><a href="index.html" id="logo">NNN</a></h1>
-							<p>changes</p>
-						</div>
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<h1>
+							<a href="index.html" id="logo">SCOUT</a>
+						</h1>
+						<p>The Synthetic Cohort of Universal Tumours</p>
 					</div>
-				</header>
+				</div>
+			</header>
 
 			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li class="current"><a href="index.html">Home</a></li>
-						<!--
-						<li>
-							<a href="#">Dropdown</a>
-							<ul>
-								<li><a href="#">Lorem ipsum dolor</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li>
-									<a href="#">Phasellus consequat</a>
-									<ul>
-										<li><a href="#">Lorem ipsum dolor</a></li>
-										<li><a href="#">Phasellus consequat</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam dolore nisl</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Veroeros feugiat</a></li>
-							</ul>
-						</li>
-						-->
-						<li><a href="left-sidebar.html">Publications</a></li>
-						<li><a href="right-sidebar.html">Softwares</a></li>
-						<li><a href="no-sidebar.html">Data Availability</a></li>
-						<li><a href="prova-sidebar.html">Prova</a></li>
-					</ul>
-				</nav>
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="left-sidebar.html">Publications</a></li>
+					<li><a href="right-sidebar.html">Softwares</a></li>
+					<li><a href="no-sidebar.html">Data Availability</a></li>
+					<li><a href="prova-sidebar.html">Pipeline</a></li>
+				</ul>
+			</nav>
 
 			<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<h2>Welcome to TXT by HTML5 UP</h2>
-						<p>A free responsive site template built on HTML5, CSS3, and some other stuff</p>
-						<a href="#main" class="button scrolly">Alright let's go</a>
-					</div>
-				</section>
+			<section id="banner">
+				<div class="content">
+					<h2>SCOUT</h2>
+					<p>
+						A synthetic framework for tumour evolution modelling,
+						sequencing simulation, and benchmarking analysis pipelines.
+					</p>
+
+					<a href="#main" class="button scrolly">
+						Explore the Workflow
+					</a>
+				</div>
+			</section>
 
 			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-12">
+			<section id="main">
 
-								<!-- Highlight -->
-									<section class="box highlight">
-										<ul class="special">
-											<li><a href="#" class="icon solid fa-search"><span class="label">Magnifier</span></a></li>
-											<li><a href="#" class="icon solid fa-heart"><span class="label">Heart</span></a></li>
-											<li><a href="#" class="icon solid fa-tablet-alt"><span class="label">Tablet</span></a></li>
-											<li><a href="#" class="icon solid fa-flask"><span class="label">Flask</span></a></li>
-											<li><a href="#" class="icon solid fa-cog"><span class="label">Cog?</span></a></li>
-										</ul>
-										<header>
-											<h2>A random assortment of icons in circles</h2>
-											<p>And some text that attempts to explain their significance</p>
-										</header>
-										<p>
-											Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis eget mi. Etiam eu<br />
-											ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis consequat.
-										</p>
-									</section>
+				<div class="container">
 
+					<!-- Intro -->
+					<section class="box highlight">
+
+						<header>
+							<h2>SCOUT Generation Workflow</h2>
+
+							<p>
+								Interactive overview of the major computational and
+								experimental steps involved in the generation of
+								the SCOUT cohort.
+							</p>
+						</header>
+
+						<!-- Timeline -->
+						<div class="timeline">
+
+							<!-- Step 1 -->
+							<div class="timeline-step">
+								<a href="https://en.wikipedia.org/wiki/Clonal_evolution" target="_blank">
+
+									<div class="circle">🧬</div>
+
+									<h3>Clonal Structure</h3>
+
+									<p>
+										Definition of tumour clonal architecture
+										and evolutionary processes.
+									</p>
+
+								</a>
 							</div>
-							<div class="col-12">
 
-								<!-- Features -->
-									<section class="box features">
-										<h2 class="major"><span>A Major Heading</span></h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-6-medium col-12-small">
+							<!-- Step 2 -->
+							<div class="timeline-step">
+								<a href="https://en.wikipedia.org/wiki/DNA_sequencing" target="_blank">
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">A Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+									<div class="circle">🔬</div>
 
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
+									<h3>Sequencing</h3>
 
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">Another Subheading</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
+									<p>
+										Simulation and generation of synthetic
+										tumour sequencing samples.
+									</p>
 
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">And Another</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-3 col-6-medium col-12-small">
-
-													<!-- Feature -->
-														<section class="box feature">
-															<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-															<h3><a href="#">And One More</a></h3>
-															<p>
-																Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-																lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-															</p>
-														</section>
-
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><a href="#" class="button large">Do Something</a></li>
-														<li><a href="#" class="button alt large">Think About It</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</section>
-
+								</a>
 							</div>
-							<div class="col-12">
 
-								<!-- Blog -->
-									<section class="box blog">
-										<h2 class="major"><span>Another Major Heading</span></h2>
-										<div>
-											<div class="row">
-												<div class="col-9 col-12-medium">
-													<div class="content">
+							<!-- Step 3 -->
+							<div class="timeline-step">
+								<a href="https://nf-co.re/sarek" target="_blank">
 
-														<!-- Featured Post -->
-															<article class="box post">
-																<header>
-																	<h3><a href="#">Here's a really big heading</a></h3>
-																	<p>With a smaller subtitle that attempts to elaborate</p>
-																	<ul class="meta">
-																		<li class="icon fa-clock">15 minutes ago</li>
-																		<li class="icon fa-comments"><a href="#">8</a></li>
-																	</ul>
-																</header>
-																<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-																<p>
-																	Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in lectus. Praesent
-																	semper mod quis eget mi. Etiam sed ante risus aliquam erat et volutpat. Praesent a
-																	dapibus velit. Curabitur sed nisi nunc, accumsan vestibulum lectus. Lorem ipsum
-																	dolor sit non aliquet sed, tempor et dolor. Praesent a dapibus velit. Curabitur
-																	accumsan.
-																</p>
-																<a href="#" class="button">Continue Reading</a>
-															</article>
+									<div class="circle">⚙️</div>
 
-													</div>
-												</div>
-												<div class="col-3 col-12-medium">
-													<div class="sidebar">
+									<h3>nf-core/sarek</h3>
 
-														<!-- Archives -->
-															<ul class="divided">
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">A Subheading</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock">6 hours ago</li>
-																			<li class="icon fa-comments"><a href="#">34</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">Another Subheading</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock">9 hours ago</li>
-																			<li class="icon fa-comments"><a href="#">27</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And Another</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock">Yesterday</li>
-																			<li class="icon fa-comments"><a href="#">184</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And Another</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock">2 days ago</li>
-																			<li class="icon fa-comments"><a href="#">286</a></li>
-																		</ul>
-																	</article>
-																</li>
-																<li>
-																	<article class="box post-summary">
-																		<h3><a href="#">And One More</a></h3>
-																		<ul class="meta">
-																			<li class="icon fa-clock">3 days ago</li>
-																			<li class="icon fa-comments"><a href="#">8,086</a></li>
-																		</ul>
-																	</article>
-																</li>
-															</ul>
-															<a href="#" class="button alt">Archives</a>
+									<p>
+										Alignment, preprocessing, and
+										somatic variant calling workflow.
+									</p>
 
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
-
+								</a>
 							</div>
+
+							<!-- Step 4 -->
+							<div class="timeline-step">
+								<a href="https://github.com/nf-core" target="_blank">
+
+									<div class="circle">📊</div>
+
+									<h3>tumourevo</h3>
+
+									<p>
+										Tumour evolution reconstruction
+										and phylogenetic analysis.
+									</p>
+
+								</a>
+							</div>
+
+							<!-- Step 5 -->
+							<div class="timeline-step">
+								<a href="https://en.wikipedia.org/wiki/Benchmark_(computing)" target="_blank">
+
+									<div class="circle">🏆</div>
+
+									<h3>Benchmarking</h3>
+
+									<p>
+										Evaluation and comparison of
+										pipeline performance and accuracy.
+									</p>
+
+								</a>
+							</div>
+
 						</div>
-					</div>
-				</section>
+
+					</section>
+
+					<!-- Additional Info -->
+					<section class="box features">
+
+						<h2 class="major">
+							<span>About SCOUT</span>
+						</h2>
+
+						<div class="row">
+
+							<div class="col-6 col-12-medium">
+
+								<section class="box feature">
+
+									<a href="#" class="image featured">
+										<img src="images/pic01.jpg" alt="" />
+									</a>
+
+									<h3>Evolutionary Modelling</h3>
+
+									<p>
+										SCOUT enables the generation of synthetic tumour cohorts
+										through realistic clonal evolution and mutation processes.
+									</p>
+
+								</section>
+
+							</div>
+
+							<div class="col-6 col-12-medium">
+
+								<section class="box feature">
+
+									<a href="#" class="image featured">
+										<img src="images/pic02.jpg" alt="" />
+									</a>
+
+									<h3>Benchmarking Framework</h3>
+
+									<p>
+										The framework supports benchmarking of variant calling,
+										tumour evolution inference, and downstream analysis tools.
+									</p>
+
+								</section>
+
+							</div>
+
+						</div>
+
+					</section>
+
+				</div>
+
+			</section>
 
 			<!-- Footer -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row gtr-200">
-							<div class="col-12">
+			<footer id="footer">
 
-								<!-- About -->
-									<section>
-										<h2 class="major"><span>What's this about?</span></h2>
-										<p>
-											This is <strong>TXT</strong>, yet another free responsive site template designed by
-											<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
-											<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
-											whatever you're working on (personal or commercial), just be sure to give us credit for the design.
-											That's basically it :)
-										</p>
-									</section>
+				<div class="container">
 
-							</div>
-							<div class="col-12">
+					<div class="row gtr-200">
 
-								<!-- Contact -->
-									<section>
-										<h2 class="major"><span>Get in touch</span></h2>
-										<ul class="contact">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
-										</ul>
-									</section>
+						<div class="col-12">
 
-							</div>
+							<section>
+
+								<h2 class="major">
+									<span>About</span>
+								</h2>
+
+								<p>
+									SCOUT is a synthetic cancer cohort framework designed
+									for benchmarking tumour evolution and genomic analysis
+									pipelines in reproducible computational environments.
+								</p>
+
+							</section>
+
 						</div>
 
-						<!-- Copyright -->
-							<div id="copyright">
-								<ul class="menu">
-									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<div class="col-12">
+
+							<section>
+
+								<h2 class="major">
+									<span>Get in Touch</span>
+								</h2>
+
+								<ul class="contact">
+
+									<li>
+										<a class="icon brands fa-github"
+										   href="https://github.com/"
+										   target="_blank">
+											<span class="label">GitHub</span>
+										</a>
+									</li>
+
+									<li>
+										<a class="icon brands fa-linkedin-in"
+										   href="#"
+										   target="_blank">
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+
+									<li>
+										<a class="icon solid fa-envelope"
+										   href="mailto:your@email.com">
+											<span class="label">Email</span>
+										</a>
+									</li>
+
 								</ul>
-							</div>
+
+							</section>
+
+						</div>
 
 					</div>
-				</footer>
+
+					<!-- Copyright -->
+					<div id="copyright">
+
+						<ul class="menu">
+							<li>&copy; SCOUT. All rights reserved.</li>
+							<li>Design: HTML5 UP</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			</footer>
 
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
