@@ -2477,6 +2477,90 @@ input, select, textarea {
 
 /* Banner */
 
+#banner {
+	position: relative;
+	z-index: 1;
+	padding: 11em 0;
+	overflow: hidden;
+}
+
+/* Background image layer (controls the photo) */
+#banner::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: url("images/background_image.png") center center / cover no-repeat;
+	z-index: 0;
+}
+
+/* Optional dark overlay (adjust alpha here) */
+#banner::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.35);
+	z-index: 1;
+}
+
+/* Content block (your original styling preserved) */
+#banner .content {
+	position: relative;
+	z-index: 2;
+
+	background-color: rgba(235, 112, 30, 0.85);
+
+	/* keep your decorative layers */
+	background-image: 
+		url("images/overlay.png"),
+		url("images/highlight.png");
+
+	background-position: top left, center center;
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+
+	text-align: center;
+	margin: 0;
+	padding: 4em 0 3.5em 0;
+}
+
+/* Title */
+#banner .content h2 {
+	color: #fff;
+	font-size: 2.75em;
+	margin: 0 0 0.5em 0;
+}
+
+/* Subtitle */
+#banner .content p {
+	display: block;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #575d59;
+	font-size: 1.35em;
+	margin: 0 0 1.25em 0;
+}
+
+/* Button */
+#banner .content .button {
+	transition: border-color .2s ease-in-out, color .2s ease-in-out;
+	color: #b4b7b5;
+	background: transparent !important;
+	border: solid 4px rgba(87, 93, 89, 0.35);
+	font-size: 1.5em;
+}
+
+#banner .content .button:hover {
+	color: #e4e7e5;
+	border-color: rgba(87, 93, 89, 0.75);
+}
+
+#banner .content .button:active {
+	color: #fff;
+	border-color: #616763;
+}
+
+/* 
 	#banner {
 		position: relative;
 		background-image: url("images/overlay.png"), url("images/overlay.png"), url("images/background_image.png");
@@ -2492,7 +2576,7 @@ input, select, textarea {
 			background-color: rgba(235, 112, 30, 0.85);
 			background-image: url("images/overlay.png"), url("images/highlight.png"), url("images/background_image.png");
 			background-position: top left, center center;
-			background-size: auto, 100% 250%;
+			background-size: auto, 100% auto;
 			background-repeat: repeat, no-repeat;
 			text-align: center;
 			margin: 0;
@@ -2535,7 +2619,7 @@ input, select, textarea {
 				#banner .content .button:active {
 					color: #fff;
 					border-color: #616763;
-				}
+				} */
 
 /* Main */
 
