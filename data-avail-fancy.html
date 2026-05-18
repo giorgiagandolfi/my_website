@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Data Availability | SCOUT</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<style>
+		.content-card {
+			background: #ffffff;
+			border-radius: 14px;
+			padding: 2rem;
+			margin-bottom: 2rem;
+			box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+		}
+
+		.section-title {
+			font-size: 1.8rem;
+			margin-bottom: 1rem;
+			border-bottom: 2px solid rgba(0,0,0,0.08);
+			padding-bottom: 0.5rem;
+		}
+
+		.subtext {
+			color: #666;
+			line-height: 1.7;
+			font-size: 1.05rem;
+		}
+
+		.link-list a {
+			display: inline-block;
+			margin: 0.4rem 0;
+			font-weight: 600;
+			text-decoration: none;
+			border-bottom: 2px solid transparent;
+			transition: 0.2s ease;
+		}
+
+		.link-list a:hover {
+			border-color: currentColor;
+		}
+
+		.badge {
+			display: inline-block;
+			background: #f3f3f3;
+			padding: 0.3rem 0.7rem;
+			border-radius: 999px;
+			font-size: 0.85rem;
+			margin-left: 0.5rem;
+			color: #444;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+<div id="page-wrapper">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="logo container">
+			<div>
+				<h1><a href="index.html" id="logo">SCOUT</a></h1>
+				<p>Data availability and reproducibility resources</p>
+			</div>
+		</div>
+	</header>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="softwares.html">Software</a></li>
+			<li class="current"><a href="data-avail-fancy.html">Data Availability</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main -->
+	<section id="main">
+		<div class="container">
+
+			<article class="box page-content">
+
+				<header>
+					<h2>Data Availability</h2>
+					<p class="subtext">
+						All datasets used in the SCOUT study are publicly available through
+						repository archives. We distinguish between raw sequencing data and
+						processed, analysis-ready datasets.
+					</p>
+				</header>
+
+				<!-- Raw Data -->
+				<section class="content-card">
+					<h3 class="section-title">Raw Data</h3>
+
+					<p class="subtext">
+						Raw whole-genome sequencing data generated in this study are available
+						through the European Nucleotide Archive (ENA).
+					</p>
+
+					<div class="link-list">
+						<a href="https://www.ebi.ac.uk/ena" target="_blank" rel="noopener noreferrer">
+							European Nucleotide Archive (ENA)
+						</a>
+						<span class="badge">WGS raw reads</span>
+					</div>
+				</section>
+
+				<!-- Processed Data -->
+				<section class="content-card">
+					<h3 class="section-title">Processed Data</h3>
+
+					<p class="subtext">
+						Processed datasets, including SCOUT-derived outputs, simulation results,
+						and downstream analysis artefacts, are deposited on Zenodo.
+						Each SPN (Sample/Patient Node) has a dedicated Zenodo record.
+					</p>
+
+					<div class="link-list">
+
+						<a href="https://zenodo.org/record/XXXXXX" target="_blank" rel="noopener noreferrer">
+							SPN 1 — Zenodo dataset
+						</a><br>
+
+						<a href="https://zenodo.org/record/YYYYYY" target="_blank" rel="noopener noreferrer">
+							SPN 2 — Zenodo dataset
+						</a><br>
+
+						<a href="https://zenodo.org/record/ZZZZZZ" target="_blank" rel="noopener noreferrer">
+							SPN 3 — Zenodo dataset
+						</a>
+
+					</div>
+				</section>
+
+			</article>
+
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<div id="copyright">
+				<ul class="menu">
+					<li>&copy; SCOUT Project. All rights reserved.</li>
+					<li>Reproducibility-focused data sharing</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
