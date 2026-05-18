@@ -95,10 +95,6 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
-	/* body {
-		/* color of the entire page background */
-		background: #90e2ab;
-	} */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
