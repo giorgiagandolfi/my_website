@@ -84,7 +84,7 @@ input, select, textarea {
 
 	body {
 		/* color of the entire page background */
-		background: #f2f5f3;
+		background: #90e2ab;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2502,7 +2502,7 @@ input, select, textarea {
 		}
 
 			#banner .content h2 {
-				color: #c38989;
+				color: #ffffff;
 				font-size: 2.75em;
 				margin: 0 0 0.5em 0;
 			}
@@ -2535,7 +2535,7 @@ input, select, textarea {
 				}
 
 				#banner .content .button:active {
-					color: #fff;
+					color: #c16f6f;
 					border-color: #616763;
 				}
 
@@ -2543,7 +2543,7 @@ input, select, textarea {
 
 	#main {
 		background: #fff;
-		border-top: solid 5px #ff6600ff;
+		border-top: solid 5px #800080ff;
 		border-bottom: solid 5px #c1cac5;
 		border-top-width: 35px;
 		border-bottom-width: 10px;
