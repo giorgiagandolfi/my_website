@@ -81,11 +81,24 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-
 	body {
+		margin: 0;
+		min-height: 100vh;
+
+		/* background image */
+		background-image:
+			linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+			url("images/background_image.png");
+
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	/* body {
 		/* color of the entire page background */
 		background: #90e2ab;
-	}
+	} */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -2533,9 +2546,9 @@ input, select, textarea {
 					color: #e4e7e5;
 					border-color: rgba(87, 93, 89, 0.75);
 				}
-
+				/* botton for the explore workflow	 */
 				#banner .content .button:active {
-					color: #ee0000;
+					color: #fbf9f9;
 					border-color: #616763;
 				}
 
