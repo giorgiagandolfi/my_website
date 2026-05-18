@@ -2488,7 +2488,7 @@ input, select, textarea {
 		z-index: 1;
 		padding: 11em 0;
 	}
-
+		/* Banner in the middle */
 		#banner .content {
 			position: relative;
 			background-color: rgba(235, 112, 30, 0.85);
@@ -2502,7 +2502,7 @@ input, select, textarea {
 		}
 
 			#banner .content h2 {
-				color: #fff;
+				color: #c38989;
 				font-size: 2.75em;
 				margin: 0 0 0.5em 0;
 			}
