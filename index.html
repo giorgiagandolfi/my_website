@@ -1,411 +1,324 @@
 <!DOCTYPE HTML>
-<!--
-	TXT by HTML5 UP
-	html5up.net
--->
-<html>
-	<head>
-		<title>The Synthetic Cohort of Universal Tumours (SCOUT)</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<style>
+	<title>SCOUT | Development, Reproducibility & Data</title>
 
-			/* =========================
-			   SCOUT Timeline
-			========================= */
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-			.timeline {
-				display: flex;
-				justify-content: space-between;
-				align-items: flex-start;
-				position: relative;
-				margin-top: 4em;
-				margin-bottom: 2em;
-				gap: 1em;
-				flex-wrap: wrap;
+	<style>
+		/* Page Styling */
+		body {
+			background: #f7f9fc;
+		}
+
+		#main {
+			padding: 4rem 0;
+		}
+
+		.page-intro {
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.page-intro h1 {
+			font-size: 3rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.page-intro p {
+			font-size: 1.1rem;
+			color: #666;
+			max-width: 700px;
+			margin: 0 auto;
+			line-height: 1.7;
+		}
+
+		/* Section Cards */
+		.section-card {
+			background: #ffffff;
+			border-radius: 18px;
+			padding: 2rem;
+			margin-bottom: 2.5rem;
+			box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+		}
+
+		.section-title {
+			font-size: 1.8rem;
+			margin-bottom: 1.8rem;
+			border-bottom: 2px solid rgba(0,0,0,0.08);
+			padding-bottom: 0.7rem;
+		}
+
+		/* Logo Grid */
+		.logo-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 1.5rem;
+		}
+
+		.logo-item {
+			background: #fafafa;
+			border-radius: 16px;
+			padding: 1.5rem;
+			text-align: center;
+			transition: all 0.25s ease;
+			border: 1px solid rgba(0,0,0,0.05);
+		}
+
+		.logo-item:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+		}
+
+		.logo-item a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.logo-item img {
+			width: 100%;
+			max-width: 140px;
+			height: 100px;
+			object-fit: contain;
+			margin-bottom: 1rem;
+		}
+
+		.logo-item h3 {
+			font-size: 1.1rem;
+			margin-bottom: 0.4rem;
+		}
+
+		.logo-item p {
+			font-size: 0.95rem;
+			color: #666;
+			line-height: 1.5;
+		}
+
+		/* Footer */
+		#footer {
+			padding: 2rem 0;
+			text-align: center;
+			color: #777;
+			font-size: 0.95rem;
+		}
+
+		/* Responsive */
+		@media screen and (max-width: 736px) {
+			.page-intro h1 {
+				font-size: 2.2rem;
 			}
 
-			.timeline::before {
-				content: '';
-				position: absolute;
-				top: 40px;
-				left: 5%;
-				width: 90%;
-				height: 4px;
-				background: rgba(87, 93, 89, 0.35);
-				z-index: 0;
-				border-radius: 10px;
+			.section-title {
+				font-size: 1.5rem;
 			}
+		}
+	</style>
+</head>
 
-			.timeline-step {
-				position: relative;
-				z-index: 1;
-				width: 18%;
-				text-align: center;
-			}
+<body class="is-preload">
 
-			.timeline-step a {
-				text-decoration: none;
-				color: inherit;
-				display: block;
-			}
+<div id="page-wrapper">
 
-			.circle {
-				width: 90px;
-				height: 90px;
-				margin: 0 auto 1em auto;
-				border-radius: 50%;
-				background: rgba(255, 255, 255);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 2.2em;
-				transition: all 0.3s ease;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-			}
-			.circle img {
-				width: 80%;
-				height: 80%;
-				object-fit: contain;
-				display: block;
-			}
+	<!-- Header -->
+	<header id="header">
+		<div class="logo container">
+			<div>
+				<h1>
+					<a href="#" id="logo">SCOUT</a>
+				</h1>
+				<p>Development, reproducibility and data resources</p>
+			</div>
+		</div>
+	</header>
 
-			.timeline-step:hover .circle {
-				transform: translateY(-10px) scale(1.08);
-				background: rgba(87, 93, 89, 0.7);
-			}
+	<!-- Main -->
+	<section id="main">
+		<div class="container">
 
-			.timeline-step h3 {
-				font-size: 1em;
-				margin-bottom: 0.5em;
-			}
+			<!-- Intro -->
+			<div class="page-intro">
+				<h1>SCOUT Resources</h1>
+				<p>
+					A central hub for SCOUT development, reproducibility resources,
+					and public data availability.
+				</p>
+			</div>
 
-			.timeline-step p {
-				font-size: 0.9em;
-				line-height: 1.5em;
-			}
+			<!-- Development -->
+			<section class="section-card">
 
-			/* Responsive */
+				<h2 class="section-title">SCOUT Development</h2>
 
-			@media screen and (max-width: 980px) {
+				<div class="logo-grid">
 
-				.timeline {
-					flex-direction: column;
-					align-items: center;
-				}
+					<!-- SCOUT -->
+					<div class="logo-item">
+						<a href="https://caravagnalab.github.io/ProCESS/"
+						   target="_blank"
+						   rel="noopener noreferrer">
 
-				.timeline::before {
-					display: none;
-				}
+							<img src="images/process_logo.png" alt="SCOUT Logo">
 
-				.timeline-step {
-					width: 100%;
-					max-width: 400px;
-					margin-bottom: 2em;
-				}
-			}
+							<h3>SCOUT</h3>
 
-		</style>
+							<p>Main development platform and pipeline framework.</p>
 
-	</head>
-
-	<body class="homepage is-preload">
-
-		<div id="page-wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<div class="logo container">
-					<div>
-						<h1>
-							<a href="index.html" id="logo">SCOUT</a>
-						</h1>
-						<p>The Synthetic Cohort of Universal Tumours</p>
+						</a>
 					</div>
-				</div>
-			</header>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
-					<!-- <li><a href="publications.html">Publications</a></li> -->
-					<li><a href="softwares-fancy.html">Softwares</a></li>
-					<li><a href="data-avail-fancy.html">Data Availability</a></li>
-					<!-- <li><a href="prova-sidebar.html">Pipeline</a></li> -->
-				</ul>
-			</nav>
+					<!-- nf-core/sarek -->
+					<div class="logo-item">
+						<a href="https://nf-co.re/sarek"
+						   target="_blank"
+						   rel="noopener noreferrer">
 
-			<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<h2>SCOUT</h2>
-					<p>
-						A synthetic framework for tumour evolution modelling,
-						sequencing simulation, and benchmarking analysis pipelines.
-					</p>
+							<img src="images/pic01.jpg" alt="nf-core sarek Logo">
 
-					<a href="#main" class="button scrolly">
-						Explore the Workflow
-					</a>
+							<h3>nf-core/sarek</h3>
+
+							<p>Best-practice cancer genomics workflow.</p>
+
+						</a>
+					</div>
+
+					<!-- nf-core/tumourevo -->
+					<div class="logo-item">
+						<a href="https://nf-co.re/tumourevo"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							<img src="images/pic02.jpg" alt="nf-core tumourevo Logo">
+
+							<h3>nf-core/tumourevo</h3>
+
+							<p>Tumour evolution and phylogenetic analysis workflows.</p>
+
+						</a>
+					</div>
+
 				</div>
 			</section>
 
-			<!-- Main -->
-			<section id="main">
+			<!-- Reproducibility -->
+			<section class="section-card">
 
-				<div class="container">
+				<h2 class="section-title">SCOUT Reproducibility</h2>
 
-					<!-- Intro -->
-					<section class="box highlight">
+				<div class="logo-grid">
 
-						<header>
-							<h2>SCOUT Generation Workflow</h2>
+					<!-- SCOUT Package -->
+					<div class="logo-item">
+						<a href="https://caravagnalab.github.io/SCOUT/"
+						   target="_blank"
+						   rel="noopener noreferrer">
 
-							<p>
-								Interactive overview of the major computational and
-								experimental steps involved in the generation of
-								the SCOUT cohort.
-							</p>
-						</header>
+							<img src="images/scout_logo.png" alt="SCOUT Package Logo">
 
-						<!-- Timeline -->
-						<div class="timeline">
+							<h3>SCOUT Package</h3>
 
-							<!-- Step 1 -->
-							<div class="timeline-step">
-								<a href="softwares.html" target="_blank">
+							<p>Reproducible software package and analysis toolkit.</p>
 
-									<div class="circle">
-										<img src="images/icon_muller.png" alt="Clonal structure icon">
-									</div>
-
-									<h3>Clonal Structure</h3>
-
-									<p>
-										Definition of tumour clonal architecture
-										and evolutionary processes.
-									</p>
-
-								</a>
-							</div>
-
-							<!-- Step 2 -->
-							<div class="timeline-step">
-								<a href="softwares.html" target="_blank">
-
-									<div class="circle">
-										<img src="images/fastq_icon.png" alt="Sequencing">
-									</div>
-
-									<h3>Sequencing</h3>
-
-									<p>
-										Simulation and generation of synthetic
-										tumour sequencing samples.
-									</p>
-
-								</a>
-							</div>
-
-							<!-- Step 3 -->
-							<div class="timeline-step">
-								<a href="https://nf-co.re/sarek" target="_blank">
-
-									<div class="circle"></div>
-
-									<h3>nf-core/sarek</h3>
-
-									<p>
-										Alignment, preprocessing, and
-										somatic variant calling workflow.
-									</p>
-
-								</a>
-							</div>
-
-							<!-- Step 4 -->
-							<div class="timeline-step">
-								<a href="https://github.com/nf-core/tumourevo" target="_blank">
-
-									<div class="circle">
-										<img src="images/clone_tree_icon.png" alt="Clone tree tumourevo">
-									</div>
-
-									<h3>nf-core/tumourevo</h3>
-
-									<p>
-										Tumour evolution reconstruction
-										and phylogenetic analysis.
-									</p>
-
-								</a>
-							</div>
-
-							<!-- Step 5 -->
-							<div class="timeline-step">
-								<a href="softwares.html" target="_blank">
-
-									<div class="circle"></div>
-
-									<h3>Benchmarking</h3>
-
-									<p>
-										Evaluation and comparison of
-										pipeline performance and accuracy.
-									</p>
-
-								</a>
-							</div>
-
-						</div>
-
-					</section>
-
-					<!-- Additional Info -->
-					<section class="box features">
-
-						<h2 class="major">
-							<span>About SCOUT</span>
-						</h2>
-
-						<div class="row">
-
-							<div class="col-6 col-12-medium">
-
-								<section class="box feature">
-
-									<a href="#" class="image featured">
-										<img src="images/pic01.jpg" alt="" />
-									</a>
-
-									<h3>Evolutionary Modelling</h3>
-
-									<p>
-										SCOUT enables the generation of synthetic tumour cohorts
-										through realistic clonal evolution and mutation processes.
-									</p>
-
-								</section>
-
-							</div>
-
-							<div class="col-6 col-12-medium">
-
-								<section class="box feature">
-
-									<a href="#" class="image featured">
-										<img src="images/pic02.jpg" alt="" />
-									</a>
-
-									<h3>Benchmarking Framework</h3>
-
-									<p>
-										The framework supports benchmarking of variant calling,
-										tumour evolution inference, and downstream analysis tools.
-									</p>
-
-								</section>
-
-							</div>
-
-						</div>
-
-					</section>
-
-				</div>
-
-			</section>
-
-			<!-- Footer -->
-			<footer id="footer">
-
-				<div class="container">
-
-					<div class="row gtr-200">
-
-						<div class="col-12">
-
-							<section>
-
-								<h2 class="major">
-									<span>About</span>
-								</h2>
-
-								<p>
-									SCOUT is a synthetic cancer cohort framework designed
-									for benchmarking tumour evolution and genomic analysis
-									pipelines in reproducible computational environments.
-								</p>
-
-							</section>
-
-						</div>
-
-						<div class="col-12">
-
-							<section>
-
-								<h2 class="major">
-									<span>Get in Touch</span>
-								</h2>
-
-								<ul class="contact">
-
-									<li>
-										<a class="icon brands fa-github"
-										   href="https://github.com/"
-										   target="_blank">
-											<span class="label">GitHub</span>
-										</a>
-									</li>
-
-									<li>
-										<a class="icon brands fa-linkedin-in"
-										   href="#"
-										   target="_blank">
-											<span class="label">LinkedIn</span>
-										</a>
-									</li>
-
-									<li>
-										<a class="icon solid fa-envelope"
-										   href="mailto:your@email.com">
-											<span class="label">Email</span>
-										</a>
-									</li>
-
-								</ul>
-
-							</section>
-
-						</div>
-
+						</a>
 					</div>
 
-					<!-- Copyright -->
-						<div id="copyright">
-							<ul class="menu">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
+					<!-- GitHub -->
+					<div class="logo-item">
+						<a href="https://github.com/caravagnalab/process_reproducibility"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							<img src="images/github_logo.png" alt="GitHub Logo">
+
+							<h3>GitHub Repository</h3>
+
+							<p>Source code, workflows and reproducibility scripts.</p>
+
+						</a>
+					</div>
+
+					<!-- Docker -->
+					<div class="logo-item">
+						<a href="https://hub.docker.com/"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							<img src="images/docker_logo.png" alt="Docker Logo">
+
+							<h3>Docker Hub</h3>
+
+							<p>Containerised environments for reproducible execution.</p>
+
+						</a>
+					</div>
 
 				</div>
+			</section>
 
-			</footer>
+			<!-- Data -->
+			<section class="section-card">
+
+				<h2 class="section-title">SCOUT Data</h2>
+
+				<div class="logo-grid">
+
+					<!-- ENA -->
+					<div class="logo-item">
+						<a href="https://www.ebi.ac.uk/ena/browser/home"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							<img src="images/ena_logo.png" alt="ENA Logo">
+
+							<h3>European Nucleotide Archive</h3>
+
+							<p>Public access to raw sequencing data generated by SCOUT.</p>
+
+						</a>
+					</div>
+
+					<!-- Zenodo -->
+					<div class="logo-item">
+						<a href="https://zenodo.org/"
+						   target="_blank"
+						   rel="noopener noreferrer">
+
+							<img src="images/zenodo_logo.png" alt="Zenodo Logo">
+
+							<h3>Zenodo</h3>
+
+							<p>Processed datasets, analysis outputs and reproducibility files.</p>
+
+						</a>
+					</div>
+
+				</div>
+			</section>
 
 		</div>
+	</section>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<p>
+				&copy; SCOUT Project — Reproducible cancer genomics infrastructure
+			</p>
+		</div>
+	</footer>
 
-	</body>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
